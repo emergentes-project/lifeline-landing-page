@@ -1,29 +1,9 @@
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-  width: min(100% - 3rem, 64rem);
-  margin-inline: auto;
-  padding-block: clamp(4rem, 12vw, 8rem);
-}
-
-.brand {
-  margin: 0 0 1rem;
-  color: #0d3b4c;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-}
-
-h1 {
-  margin: 0;
-  font-size: clamp(3rem, 8vw, 5rem);
-  line-height: 1.1;
-}
-
-.description {
-  max-width: 34rem;
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
-  line-height: 1.6;
+  flex: 1 0 auto;
 }

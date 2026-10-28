@@ -1,0 +1,90 @@
+.privacy-page {
+  padding-top: 140px;
+  padding-bottom: var(--space-20);
+  background: linear-gradient(180deg, #eef7fa 0%, var(--clinical-white) 100%);
+}
+
+.privacy-header {
+  max-width: 780px;
+  margin: 0 auto var(--space-12);
+
+  .privacy-title {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 2.75rem;
+    color: var(--deep-rescue-teal);
+    margin-bottom: var(--space-4);
+  }
+
+  .privacy-subtitle {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+  }
+}
+
+.privacy-body {
+  max-width: 820px;
+  margin: 0 auto var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.privacy-card {
+  background-color: #ffffff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-sm);
+
+  h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--deep-rescue-teal);
+    margin-bottom: var(--space-3);
+  }
+
+  p {
+    font-size: 0.9375rem;
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: var(--space-3);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--dark-slate);
+    }
+
+    a {
+      color: var(--lifeline-cyan);
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.privacy-footer {
+  margin-top: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .privacy-page {
+    padding-top: 110px;
+
+    .privacy-header .privacy-title {
+      font-size: 2rem;
+    }
+  }
+
+  .privacy-card {
+    padding: var(--space-6);
+  }
+}

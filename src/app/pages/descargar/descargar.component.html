@@ -1,0 +1,74 @@
+<section class="download-page">
+  <div class="container text-center">
+    <span class="section-label">Disponible para Android e iOS</span>
+    <h1 class="download-title">Descarga Lifeline</h1>
+    <p class="download-subtitle">
+      Obtén orientación de primeros auxilios en tu teléfono aun sin internet, y sincroniza casos con los rescatistas cuando vuelva la señal.
+    </p>
+
+    <!-- Urgent Warning Alert -->
+    <div class="download-alert-card">
+      <div class="alert-icon-wrap">
+        <span class="material-icons-outlined">offline_bolt</span>
+      </div>
+      <div class="alert-text">
+        <h4>¡Instálala antes de que ocurra la emergencia!</h4>
+        <p>
+          Tras un sismo de gran magnitud, las redes colapsan y no podrás descargar aplicaciones nuevas. La ayuda y la base médica deben estar instaladas en tu dispositivo con anticipación.
+        </p>
+      </div>
+    </div>
+
+    <!-- Store Cards Grid -->
+    <div class="platforms-grid">
+      <!-- Android -->
+      <div class="platform-card">
+        <div class="platform-icon android">
+          <span class="material-icons-outlined">android</span>
+        </div>
+        <h3>Lifeline para Android</h3>
+        <p class="platform-spec">Compatible con Android 8.0 y versiones superiores</p>
+        <ul class="platform-features">
+          <li>Modelo de lenguaje optimizado para dispositivos gama media y alta</li>
+          <li>Base médica de primeros auxilios RAG local preinstalada</li>
+          <li>Reconocimiento de voz local sin consumo de megas</li>
+        </ul>
+        <a href="#descarga-directa" class="btn btn-teal full-width">
+          <span class="material-icons-outlined">get_app</span>
+          Google Play Store
+        </a>
+      </div>
+
+      <!-- iOS -->
+      <div class="platform-card">
+        <div class="platform-icon ios">
+          <span class="material-icons-outlined">apple</span>
+        </div>
+        <h3>Lifeline para iPhone</h3>
+        <p class="platform-spec">Compatible con iOS 16.0 y versiones superiores</p>
+        <ul class="platform-features">
+          <li>Aceleración de inferencia local con Apple Neural Engine</li>
+          <li>Cifrado y seguridad del llavero iOS para datos médicos</li>
+          <li>Diseño ergonómico Tab Bar enfocado en uso con una sola mano</li>
+        </ul>
+        <a href="#descarga-directa" class="btn btn-primary full-width">
+          <span class="material-icons-outlined">get_app</span>
+          Apple App Store
+        </a>
+      </div>
+    </div>
+
+    <!-- Family Sharing Callout -->
+    <div class="share-card">
+      <h3>Comparte Lifeline con tu familia y comunidad</h3>
+      <p>Asegúrate de que tus padres, hijos, vecinos y compañeros de trabajo estén preparados ante un sismo.</p>
+      <button class="btn btn-outline" (click)="shareApp()" type="button">
+        <span class="material-icons-outlined">share</span>
+        <span>Compartir enlace de descarga</span>
+      </button>
+      @if (copySuccess) {
+        <p class="copied-msg">¡Enlace copiado al portapapeles!</p>
+      }
+    </div>
+  </div>
+</section>

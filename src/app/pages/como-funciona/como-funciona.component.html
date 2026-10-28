@@ -1,0 +1,106 @@
+<section class="page-hero">
+  <div class="container text-center">
+    <span class="section-label">Flujo de Emergencia y Rescate</span>
+    <h1 class="page-title">Cómo funciona Lifeline</h1>
+    <p class="page-subtitle">
+      Inteligencia artificial en el teléfono para responder sin señal, y sincronización inteligente de casos cuando regresa la conectividad.
+    </p>
+  </div>
+</section>
+
+<section class="flow-section">
+  <div class="container">
+    <div class="flow-steps">
+      <!-- Step 1 -->
+      <div class="flow-step-item">
+        <div class="flow-step-number">1</div>
+        <div class="flow-step-content">
+          <div class="badge-offline">
+            <span class="dot-amber"></span>
+            Modo 100% Offline (Sin red)
+          </div>
+          <h2>El ciudadano registra la consulta de emergencia</h2>
+          <p>
+            Bajo condiciones de estrés tras un sismo, escribir en el teclado puede resultar difícil. Por ello, Lifeline ofrece tres vías de entrada:
+          </p>
+          <ul class="flow-features">
+            <li><strong>Texto rápido:</strong> Describiendo los síntomas o lo que ocurrió.</li>
+            <li><strong>Mensaje de voz:</strong> Transcripción local de voz a texto on-device.</li>
+            <li><strong>Fotografía de la herida:</strong> Captura segura almacenada localmente para análisis visual.</li>
+          </ul>
+          <p class="flow-note">
+            No requiere inicio de sesión para atender una urgencia inmediata.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flow-step-item">
+        <div class="flow-step-number">2</div>
+        <div class="flow-step-content">
+          <div class="badge-offline">
+            <span class="dot-amber"></span>
+            IA on-device + RAG Local
+          </div>
+          <h2>Orientación médica inmediata y confiable</h2>
+          <p>
+            El motor de IA local consulta la base de conocimientos de primeros auxilios precargada en el dispositivo (MINSA, OMS, Cruz Roja Peruana) utilizando la técnica RAG:
+          </p>
+          <ul class="flow-features">
+            <li><strong>Sin alucinaciones:</strong> Las respuestas están estrictamente fundamentadas en protocolos autorizados.</li>
+            <li><strong>Pasos ordenados:</strong> Instrucciones en formato checklist numerado, comprensibles sin tecnicismos médicos.</li>
+            <li><strong>Alerta de gravedad:</strong> Si detecta signos de alarma, ordena buscar auxilio profesional de inmediato.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flow-step-item">
+        <div class="flow-step-number">3</div>
+        <div class="flow-step-content">
+          <div class="badge-online">
+            <span class="dot-cyan"></span>
+            Sincronización en la Nube
+          </div>
+          <h2>Envío automático al recuperar la señal</h2>
+          <p>
+            La consulta queda en la cola local (Outbox) con su geolocalización. En el instante en que el teléfono detecta conexión a internet o datos móviles:
+          </p>
+          <ul class="flow-features">
+            <li><strong>Sincronización segura:</strong> Los datos y evidencias se transmiten cifrados conforme a la Ley N° 29733.</li>
+            <li><strong>Nacimiento del Caso:</strong> Se crea un caso en la plataforma médica para triaje y priorización.</li>
+            <li><strong>Notificación al ciudadano:</strong> Recibe confirmación de que los equipos de rescate fueron alertados.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flow-step-item">
+        <div class="flow-step-number">4</div>
+        <div class="flow-step-content">
+          <div class="badge-online">
+            <span class="dot-cyan"></span>
+            Personal Médico Verificado
+          </div>
+          <h2>Autoasignación, atención y cierre del caso</h2>
+          <p>
+            Los profesionales de la salud colegiados y verificados acceden a la vista de "Casos disponibles" para coordinar la respuesta médica en campo:
+          </p>
+          <ul class="flow-features">
+            <li><strong>Triaje estructurado:</strong> Filtros por provincia, prioridad (Alta, Media, Baja) y solicitud de auxilio urgente.</li>
+            <li><strong>Autoasignación exclusiva:</strong> El profesional toma la responsabilidad del caso sin duplicar esfuerzos.</li>
+            <li><strong>Cierre formal:</strong> Registro de observaciones médicas y estado final del paciente.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-cta text-center">
+      <h3>¿Listo para proteger a tu familia antes del próximo sismo?</h3>
+      <div class="cta-btns">
+        <a routerLink="/descargar" class="btn btn-primary">Descargar Lifeline</a>
+        <a routerLink="/" fragment="preguntas" class="btn btn-outline">Preguntas frecuentes</a>
+      </div>
+    </div>
+  </div>
+</section>

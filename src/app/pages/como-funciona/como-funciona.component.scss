@@ -1,0 +1,197 @@
+.page-hero {
+  padding-top: 140px;
+  padding-bottom: var(--space-12);
+  background: linear-gradient(180deg, #eef7fa 0%, var(--clinical-white) 100%);
+
+  .page-title {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--deep-rescue-teal);
+    margin-bottom: var(--space-4);
+  }
+
+  .page-subtitle {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.flow-section {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-20);
+  background-color: var(--clinical-white);
+}
+
+.flow-steps {
+  max-width: 860px;
+  margin: 0 auto var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.flow-step-item {
+  display: flex;
+  gap: var(--space-6);
+  background-color: #ffffff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--lifeline-cyan);
+    box-shadow: var(--shadow-md);
+  }
+
+  .flow-step-number {
+    width: 48px;
+    height: 48px;
+    background-color: var(--deep-rescue-teal);
+    color: #ffffff;
+    border-radius: 50%;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .flow-step-content {
+    flex-grow: 1;
+
+    .badge-offline,
+    .badge-online {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      margin-bottom: var(--space-3);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+
+      .dot-amber {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--alert-amber);
+      }
+
+      .dot-cyan {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--lifeline-cyan);
+      }
+    }
+
+    .badge-offline {
+      background-color: #fef3c7;
+      color: #92400e;
+    }
+
+    .badge-online {
+      background-color: #e0f2fe;
+      color: #0369a1;
+    }
+
+    h2 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.375rem;
+      color: var(--dark-slate);
+      margin-bottom: var(--space-3);
+    }
+
+    p {
+      font-size: 0.9375rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+      margin-bottom: var(--space-4);
+    }
+
+    .flow-features {
+      list-style: disc;
+      padding-left: var(--space-5);
+      margin-bottom: var(--space-4);
+
+      li {
+        font-size: 0.875rem;
+        color: var(--gray-700);
+        margin-bottom: var(--space-2);
+        line-height: 1.5;
+
+        strong {
+          color: var(--deep-rescue-teal);
+        }
+      }
+    }
+
+    .flow-note {
+      font-size: 0.8125rem;
+      color: var(--gray-500);
+      background-color: var(--gray-100);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.flow-cta {
+  background-color: #ffffff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10) var(--space-6);
+  max-width: 860px;
+  margin: 0 auto;
+
+  h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--deep-rescue-teal);
+    margin-bottom: var(--space-6);
+  }
+
+  .cta-btns {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding-top: 110px;
+
+    .page-title {
+      font-size: 2.25rem;
+    }
+  }
+
+  .flow-step-item {
+    flex-direction: column;
+    padding: var(--space-6);
+  }
+
+  .flow-cta .cta-btns {
+    flex-direction: column;
+    align-items: center;
+
+    .btn {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+}
