@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ANDROID_APK_URL } from '../../app-download';
 
 @Component({
   selector: 'app-descargar',
@@ -10,6 +11,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './descargar.component.scss'
 })
 export class DescargarComponent {
+  readonly downloadUrl = ANDROID_APK_URL;
   copySuccess = false;
 
   shareApp(): void {
@@ -17,10 +19,10 @@ export class DescargarComponent {
       navigator.share({
         title: 'Lifeline: Auxilio post-sismo',
         text: 'Instala Lifeline antes del sismo. Primeros auxilios con IA en tu teléfono, aun sin internet.',
-        url: window.location.origin
+        url: this.downloadUrl
       }).catch(() => {});
     } else {
-      navigator.clipboard.writeText(window.location.origin);
+      navigator.clipboard.writeText(this.downloadUrl);
       this.copySuccess = true;
       setTimeout(() => this.copySuccess = false, 3000);
     }

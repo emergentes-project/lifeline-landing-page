@@ -18,7 +18,7 @@ export const routes: Routes = [
   {
     path: 'descargar',
     component: DescargarComponent,
-    title: 'Descargar Lifeline | Android e iOS'
+    title: 'Descargar Lifeline | Android'
   },
   {
     path: 'privacidad',

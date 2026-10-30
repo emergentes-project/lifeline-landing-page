@@ -947,46 +947,9 @@
   gap: var(--space-4);
   align-items: flex-end;
 
-  .store-buttons-row {
-    display: flex;
-    gap: var(--space-3);
-  }
-
-  .btn-store {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-2);
-    padding: 12px 22px;
-    border-radius: var(--radius-md);
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 0.9375rem;
-    cursor: pointer;
-    transition: all 0.25s ease;
-
-    .material-icons-outlined {
-      font-size: 1.25rem;
-    }
-  }
-
-  .btn-store-google {
-    background-color: #ffffff;
-    color: var(--dark-slate);
-
-    &:hover {
-      background-color: var(--gray-100);
-      transform: translateY(-2px);
-    }
-  }
-
-  .btn-store-apple {
-    background-color: var(--lifeline-cyan);
-    color: #ffffff;
-
-    &:hover {
-      background-color: var(--lifeline-cyan-hover);
-      transform: translateY(-2px);
-    }
+  .btn-teal {
+    background-color: var(--dark-slate);
+    border: 1px solid rgba(255, 255, 255, 0.35);
   }
 
   .btn-share-family {
@@ -1229,14 +1192,8 @@
     }
   }
 
-  .banner-actions .store-buttons-row {
-    flex-direction: column;
+  .banner-actions .btn-teal {
     width: 100%;
-
-    .btn-store {
-      width: 100%;
-      justify-content: center;
-    }
   }
 
   .banner-actions .btn-share-family {

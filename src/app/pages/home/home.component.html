@@ -20,13 +20,8 @@
         </p>
 
         <div class="hero-actions">
-          <a routerLink="/descargar" class="btn btn-teal">
-            <span class="material-icons-outlined">android</span>
-            <span>Google Play</span>
-          </a>
-          <a routerLink="/descargar" class="btn btn-outline">
-            <span class="material-icons-outlined">apple</span>
-            <span>App Store</span>
+          <a [href]="downloadUrl" class="btn btn-teal">
+            <span>DESCARGA YA</span>
           </a>
         </div>
 
@@ -507,16 +502,7 @@
       </div>
 
       <div class="banner-actions">
-        <div class="store-buttons-row">
-          <a routerLink="/descargar" class="btn-store btn-store-google">
-            <span class="material-icons-outlined">android</span>
-            <span>Google Play</span>
-          </a>
-          <a routerLink="/descargar" class="btn-store btn-store-apple">
-            <span class="material-icons-outlined">apple</span>
-            <span>App Store</span>
-          </a>
-        </div>
+        <a [href]="downloadUrl" class="btn btn-teal">DESCARGA YA</a>
         <button class="btn-share-family" type="button">
           <span class="material-icons-outlined">share</span>
           <span>Compartir con mi familia</span>
@@ -562,13 +548,8 @@
     <h2 class="final-cta-title">Que no te falte orientación cuando más la necesites</h2>
 
     <div class="final-cta-buttons">
-      <a routerLink="/descargar" class="btn btn-teal">
-        <span class="material-icons-outlined">android</span>
-        <span>Google Play</span>
-      </a>
-      <a routerLink="/descargar" class="btn btn-outline">
-        <span class="material-icons-outlined">apple</span>
-        <span>App Store</span>
+      <a [href]="downloadUrl" class="btn btn-teal">
+        <span>DESCARGA YA</span>
       </a>
     </div>
   </div>

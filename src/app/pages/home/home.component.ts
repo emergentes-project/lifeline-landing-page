@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ANDROID_APK_URL } from '../../app-download';
 
 interface FaqItem {
   question: string;
@@ -16,6 +17,7 @@ interface FaqItem {
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  readonly downloadUrl = ANDROID_APK_URL;
   activeRole: 'ciudadano' | 'medico' = 'ciudadano';
 
   faqs: FaqItem[] = [
