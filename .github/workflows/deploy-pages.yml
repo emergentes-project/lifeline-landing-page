@@ -33,6 +33,10 @@ jobs:
 
       - name: Support direct links to Angular routes
         run: |
+          for route in como-funciona descargar privacidad; do
+            mkdir -p "dist/lifeline-landing-page/browser/$route"
+            cp dist/lifeline-landing-page/browser/index.html "dist/lifeline-landing-page/browser/$route/index.html"
+          done
           cp dist/lifeline-landing-page/browser/index.html dist/lifeline-landing-page/browser/404.html
           touch dist/lifeline-landing-page/browser/.nojekyll
 
